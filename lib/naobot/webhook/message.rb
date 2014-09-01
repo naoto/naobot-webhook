@@ -1,10 +1,10 @@
 module Naobot::Webhook
   class Message
 
-    attr_reader :channel, :user, :body
+    attr_reader :to, :user, :body
 
     def initialize(channel, user, text)
-      @channel = channel.to_sym
+      @to = channel.to_sym
       @user = user
       @body = text
     end

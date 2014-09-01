@@ -14,7 +14,7 @@ module Naobot::Webhook
       message = Message.new(channel, user, text)
       @plugins.each do |neme, cls|
         cls.on_privmsg(message)
-        cls.result(message.channel).each do |res|
+        cls.result(message.to).each do |res|
           yield res
         end
       end

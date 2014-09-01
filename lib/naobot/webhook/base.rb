@@ -3,7 +3,7 @@ module Naobot::Webhook
 
 
     def initialize
-      @response = {}
+      @response = Hash.new([])
     end
 
     def notice(channel, message)
