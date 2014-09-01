@@ -27,4 +27,5 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'bubs'
   spec.add_runtime_dependency 'twitter'
   spec.add_runtime_dependency 'weather_jp'
+  spec.add_runtime_dependency 'google-search'
 end

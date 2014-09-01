@@ -3,6 +3,7 @@ PATH
   specs:
     naobot-webhook (0.0.1)
       bubs
+      google-search
       nokogiri
       rinne
       sinatra
@@ -18,6 +19,8 @@ GEM
     equalizer (0.0.9)
     faraday (0.9.0)
       multipart-post (>= 1.2, < 3)
+    google-search (1.0.3)
+      json
     http (0.6.2)
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
