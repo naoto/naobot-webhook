@@ -2,6 +2,8 @@ module Naobot
   module Webhook
     class Server < Sinatra::Base
 
+      set :server, :webrick
+
       configure do
         @@plugin = Plugin.new("./plugins/")
       end

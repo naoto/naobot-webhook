@@ -24,4 +24,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'sinatra'
   spec.add_runtime_dependency 'rinne'
   spec.add_runtime_dependency 'nokogiri'
+  spec.add_runtime_dependency 'bubs'
+  spec.add_runtime_dependency 'twitter'
 end

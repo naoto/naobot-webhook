@@ -3,9 +3,9 @@ require "naobot/webhook/version"
 module Naobot
   module Webhook
     # Your code goes here...
-    require 'sinatra'
     require 'json'
     require 'rinne'
+    require 'sinatra/base'
 
     require 'naobot/webhook/base'
     require 'naobot/webhook/plugin'
