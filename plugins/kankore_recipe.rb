@@ -8,7 +8,9 @@ class KankoreRecipe < Naobot::Webhook::Base
     when /^recipe big\s?(.+)$/
       notice(message.to, recipe_big($1))
     when /^recipe\s?(.+)$/
-      notice(message.to, recipe($1))
+      recipe($1).each do |rec|
+        notice(message.to, rec)
+      end
     end
   end
 
